@@ -13,7 +13,8 @@ import seaborn as sns
 from matplotlib.ticker import MaxNLocator
 import matplotlib.pyplot as plt
 sns.set_style("darkgrid")
-
+import dotenv
+dotenv.load_dotenv()
 
 
 # Creating a new Word document
@@ -24,8 +25,8 @@ def ETL(date_from, date_to):
     api_url = "https://my.cloudtalk.io/api/calls/index.json"
 
     # credentials
-    idd = "X4THUIGLZTFDECBZKV6NMSD"
-    pw = "GgOQV5tsSpjKPm3n;Ikczv6aW1ZTfJBH!q78M2XRuL"
+    idd = os.environ.get("API_USER")
+    pw = os.environ.get("API_PW")
 
     page = 1
     limit = 1000
