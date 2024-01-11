@@ -191,7 +191,8 @@ def call_api(date_from, date_to):
     st.altair_chart(chart, use_container_width=True)
                 
 def main():
-    st.set_page_config(layout='wide')
+    # set the title of the window
+    st.set_page_config(page_title='CloudTalk - Mitsis Group Analytics',layout='wide')
     st.title('CloudTalk - Mitsis Group Analytics')
     # two columns
     col1, col2 = st.columns(2)
