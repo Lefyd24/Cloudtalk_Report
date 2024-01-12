@@ -194,6 +194,11 @@ def main():
     # set the title of the window
     st.set_page_config(page_title='CloudTalk - Mitsis Group Analytics',layout='wide')
     st.title('CloudTalk - Mitsis Group Analytics')
+    st.markdown("""
+    This app retrieves data from CloudTalk API and displays it in a dashboard.
+    
+    Please choose the start and end date and time and click "Call API" to perform a request.
+    """)
     # two columns
     col1, col2 = st.columns(2)
     start_date = col1.date_input('Start date', value=dt.datetime.now(), key='start_date')
