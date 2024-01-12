@@ -196,7 +196,9 @@ def main():
     st.title('CloudTalk - Mitsis Group Analytics')
     st.markdown("""
     This app retrieves data from CloudTalk API and displays it in a dashboard.\n
-    **Note:** In case a call is missed and then a callback is made by an agent, this call is not fetched by the API.    
+    **Notes:** 
+    * In case a call is missed and then a callback is made by an agent, this call is not fetched by the API.    
+    * In case the app displays an error, try with different dates.
     """)
     # two columns
     col1, col2 = st.columns(2)
