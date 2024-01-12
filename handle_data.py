@@ -54,11 +54,11 @@ def edit_data(answered_df, missed_df):
         }
         </style>
         """, unsafe_allow_html=True)
-    progress_bar = st.progress(0, text="Fetching call info...")
+    progress_bar = st.progress(0, text=f"Fetching call info...({len(unique_cdr_ids)} calls)")
     false_requests = 0
     for idx, call_id in enumerate(unique_cdr_ids):
         # add a progress bar
-        progress_bar.progress(idx/len(unique_cdr_ids), text="Fetching call info...")
+        progress_bar.progress(idx/len(unique_cdr_ids), text=f"Fetching call info...({idx}/{len(unique_cdr_ids)} calls)")
         status, r = make_api_call(api_url, type_url="call", call_id=call_id)
         if status != 200:
             false_requests += 1
