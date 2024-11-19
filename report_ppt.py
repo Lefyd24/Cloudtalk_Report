@@ -5,29 +5,24 @@ from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
 from modified_report_script import ETL
 import datetime as dt
-import logging
 import time
 from send_email import send_email
 from warnings import filterwarnings
 from send_email import send_email
 
 filterwarnings('ignore')
-logging.basicConfig(filename='.log/run.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 # Set date range
 date_to = dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 date_from = (dt.datetime.now() - dt.timedelta(days=7)).strftime('%Y-%m-%d 00:00:00')
 
-logging.info(f'Generating report for the date range: {date_from} - {date_to}')
 start = time.time()
 
 try:
     answered_df, missed_df, error_calls, agents, agents_ext, unanswered_call_counts, unanswered_calls_ring, unanswered_calls_hour = ETL(date_from, date_to)
 except Exception as e:
     print(e)
-    logging.error(f'Error while generating report: {e}')
     exit(1)
 
 # %%
@@ -326,9 +321,6 @@ value_axis.major_gridlines.format.line.color.rgb = RGBColor(100, 100, 100)  # Gr
 # Save the presentation
 prs.save('Cloudtalk_Report.pptx')
 
-logging.info(f'Report generated successfully in {round(time.time() - start, 2)} seconds')
-logging.info('Sending email...')
 send_email()
-logging.info('Email sent successfully')
 
 
