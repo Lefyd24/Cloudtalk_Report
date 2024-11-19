@@ -1,0 +1,125 @@
+Running script at Éú¨ 05/02/2024 14:57:43,76 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 09/02/2024 15:00:00,71 
+Virtual environment activated 
+Script execution completed 
+Running script at â¨® 18/02/2024 12:42:56,39 
+Virtual environment activated 
+Script execution completed 
+Running script at Éú¨ 19/02/2024 14:53:45,67 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 23/02/2024 15:00:00,42 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 01/03/2024 15:00:00,81 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 08/03/2024 15:00:01,28 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 15/03/2024 15:00:05,85 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 22/03/2024 15:00:01,16 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 29/03/2024 15:00:01,30 
+Virtual environment activated 
+Script execution completed 
+Running script at Éú¨ 08/04/2024  9:16:56,83 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 12/04/2024 19:09:34,90 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 19/04/2024 15:00:01,04 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 26/04/2024 15:00:01,14 
+Virtual environment activated 
+Script execution completed 
+Running script at íú´ 08/05/2024  9:12:28,18 
+Virtual environment activated 
+Script execution completed 
+Running script at íú´ 15/05/2024  4:08:00,87 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 17/05/2024 15:00:01,25 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 24/05/2024 15:00:01,15 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 31/05/2024 15:00:01,39 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 07/06/2024 15:00:00,99 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 14/06/2024 15:00:01,10 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 21/06/2024 15:00:00,33 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 28/06/2024 15:00:01,55 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 05/07/2024 15:00:00,65 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 12/07/2024 15:00:02,36 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 19/07/2024 15:00:00,84 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 26/07/2024 15:27:30,93 
+Virtual environment activated 
+Script execution completed 
+Running script at èú£ 12/09/2024 14:19:37,73 
+Virtual environment activated 
+Running script at èú£ 12/09/2024 14:22:45,47 
+Virtual environment activated 
+Script execution completed 
+Script execution completed 
+Running script at èú£ 12/09/2024 14:24:27,24 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 13/09/2024 15:00:00,68 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 20/09/2024 15:00:00,85 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 27/09/2024 15:00:00,58 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 04/10/2024 15:00:01,44 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 11/10/2024 15:00:01,12 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 18/10/2024 15:00:01,72 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 25/10/2024 15:00:01,64 
+Virtual environment activated 
+Script execution completed 
+Running script at í®† 29/10/2024  9:49:06,80 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 01/11/2024 15:00:00,66 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 08/11/2024 15:00:00,94 
+Virtual environment activated 
+Script execution completed 
+Running script at èò® 15/11/2024 15:00:00,68 
+Virtual environment activated 
+Script execution completed 
+Running script at í®† 19/11/2024 11:59:08,52 
+Virtual environment activated 

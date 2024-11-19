@@ -35,7 +35,7 @@ def ETL(date_from, date_to):
     missed_df = pd.DataFrame()
 
     while True:
-        print("Page: " + str(page))
+        #print("Page: " + str(page))
 
         # make requests
 
@@ -69,7 +69,7 @@ def ETL(date_from, date_to):
     page = 1
 
     while True:
-        print("Page: " + str(page))
+        #print("Page: " + str(page))
         # make requests
         missed = requests.get(
             api_url,
@@ -84,7 +84,7 @@ def ETL(date_from, date_to):
         )
         page_count = missed.json()["responseData"]["pageCount"]
         if missed.status_code != 200:
-            print("Error: " + str(missed.status_code))
+            #print("Error: " + str(missed.status_code))
             break
         # convert to dataframe
         missed_df = pd.concat(
@@ -136,10 +136,10 @@ def ETL(date_from, date_to):
     error_calls = 0
     api_url = "https://analytics-api.cloudtalk.io/api/calls/{callId}"
     for idx, call_id in enumerate(unique_cdr_ids):
-        print(f"{idx}/{len(unique_cdr_ids)}")
+        #print(f"{idx}/{len(unique_cdr_ids)}")
         r = requests.get(api_url.format(callId=call_id), auth=(idd, pw))
         if r.status_code != 200:
-            print("Error: " + str(r.status_code))
+            #print("Error: " + str(r.status_code))
             error_calls += 1
             continue
 

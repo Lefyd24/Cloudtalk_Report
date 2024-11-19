@@ -31,6 +31,11 @@ def make_api_call(url, type_url="history", **kwargs):
         if r.status_code != 200:
             print("Error: " + str(r.status_code))
         return r.status_code, r
+    elif type_url == 'groups':
+        r = requests.get(url, auth=(idd, pw))
+        if r.status_code != 200:
+            print("Error: " + str(r.status_code))
+        return r.status_code, r
 
 
 def edit_data(answered_df, missed_df):

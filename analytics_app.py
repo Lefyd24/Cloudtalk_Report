@@ -7,7 +7,7 @@ import altair as alt
 from dotenv import load_dotenv, find_dotenv
 import os
 from warnings import filterwarnings
-from handle_data import edit_data
+from handle_data import edit_data, make_api_call
 filterwarnings('ignore')
 load_dotenv()
 
@@ -189,7 +189,8 @@ def call_api(date_from, date_to):
 
     # Display the chart in Streamlit
     st.altair_chart(chart, use_container_width=True)
-                
+    
+        
 def main():
     # set the title of the window
     st.set_page_config(page_title='CloudTalk - Mitsis Group Analytics',layout='wide')
@@ -213,6 +214,20 @@ def main():
         start_date = dt.datetime.combine(start_date, start_time)
         end_date = dt.datetime.combine(end_date, end_time)
         call_api(start_date, end_date)
-
+        # Group statistics
+        if start_date.date() == dt.date.today():
+            code, resp_groups = make_api_call("https://my.cloudtalk.io/api/statistics/realtime/groups.json", type_url="groups")
+            if code != 200:
+                st.error(f"Error retrieving group statistics. Error code: {code}")
+                pass
+            else:
+                groups = pd.DataFrame(resp_groups.json()['responseData']['data']['groups'])
+                # json normalize "real_time" column and drop the original column
+                groups.drop(columns=['real_time'], inplace=True)
+                groups.columns = groups.columns.str.replace('_', ' ').str.capitalize()      
+                groups['Id'] = groups['Id'].astype(str)
+                st.subheader("Group statistics")
+                # render the df and highlight the max values for each numerical column
+                st.dataframe(groups.style.highlight_max(axis=0, subset=[column_name for column_name in groups.columns if groups[column_name].dtype != 'object'], color='#e4b090'))
 if __name__ == '__main__':
     main()
